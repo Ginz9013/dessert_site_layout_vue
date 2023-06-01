@@ -1,110 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Practice</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Container -->
-    <div class="container">
-
-        <!-- header -->
-        <div class="header">
-            <div class="logo"></div>
-            <div class="nav"></div>
-        </div>
-
-        <!-- Home Area -->
-        <div class="home-area">
-            <div class="text-area">
-                <h1>Title</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere! Dignissimos numquam magni saepe culpa inventore! Fugit ut molestias odio?
-                </p>
-            </div>
-            <img src="./img/Rectangle 2.png" alt="home-banner">
-        </div>
-
-        <!-- Sale Area -->
-        <!-- .sale-area>h2{On Sale}+.cards-group>(.card>.btn>p{item})*3 -->
-        <div class="sale-area">
-            <!-- 標題 -->
-            <h2>On Sale</h2>
-
-            <!-- 卡片群組 -->
-            <div class="cards-group">
-                <!-- 卡片1 -->
-                <div class="card card1">
-                    <button type="button">item</button>
-                </div>
-
-                <!-- 卡片2 -->
-                <div class="card card2">
-                    <button type="button">item</button>
-                </div>
-
-                <!-- 卡片3 -->
-                <div class="card card3">
-                    <button type="button">item</button>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- News Area -->
-        <!-- .news-area>h2{News}+.cards-group>(.card>img+p+button)*3^button -->
-        <div class="news-area">
-            <!-- 標題 -->
-            <h2>News</h2>
-
-            <!-- 卡片群組 -->
-            <div class="cards-group">
-                <!-- 卡片1 -->
-                <div class="card">
-                    <img src="./img/Rectangle 6.png" alt="檸檬塔">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quis.</p>
-                    <button type="button">Details</button>
-                </div>
-
-                <!-- 卡片2 -->
-                <div class="card">
-                    <img src="./img/Rectangle 8.png" alt="栗子塔">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam.</p>
-                    <button type="button">Details</button>
-                </div>
-
-                <!-- 卡片3 -->
-                <div class="card">
-                    <img src="./img/Rectangle 10.png" alt="巧克力蛋糕">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, et.</p>
-                    <button type="button">Details</button>
-                </div>
-            </div>
-
-            <!-- More 按鈕 -->
-            <button type="button" class="btn-more">More</button>
-        </div>
-
-        <!-- New Arrival Area -->
-        <!-- .new-arrival-area>.bg+img+.text-card>h3{New Arrival}+p -->
-        <div class="new-arrival-area">
-            <div class="bg"></div>
-            <img src="./img/Rectangle 12.png" alt="草莓奶酪">
-            <div class="text-card">
-                <h3>New Arrival</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti laudantium exercitationem consectetur nulla quas cum expedita necessitatibus repudiandae amet laboriosam.
-                </p>
-            </div>
-        </div>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
     </div>
-
-    <footer>
-        <p>Lorem ipsum dolor sit.</p>
-    </footer>
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
