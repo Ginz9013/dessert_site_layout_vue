@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  background-color: #FFFAEA;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.container .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0;
+}
+.container .header .logo {
+  width: 100px;
+  height: 100px;
+  background-color: #D38282;
+}
+.container .header .nav {
+  width: 50px;
+  height: 10px;
+  background-color: #555;
+  position: relative;
+  border-radius: 5px;
+}
+.container .header .nav::before, .container .header .nav::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 5px;
+}
+.container .header .nav::before {
+  top: -20px;
+}
+.container .header .nav::after {
+  top: 20px;
+}
+.container .home-area {
+  display: flex;
+  align-items: center;
+}
+.container .home-area .text-area {
+  padding-bottom: 48px;
+}
+.container .home-area .text-area h1 {
+  margin-left: 32px;
+  font-size: 64px;
+  margin-bottom: 21px;
+}
+.container .home-area .text-area p {
+  font-size: 22px;
+}
+.container .home-area img {
+  width: 50%;
+}
+.container .sale-area {
+  margin-bottom: 48px;
+}
+.container .sale-area h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-top: 64px;
+}
+.container .sale-area .cards-group {
+  display: flex;
+  justify-content: space-between;
+}
+.container .sale-area .cards-group .card {
+  width: 30%;
+  height: 360px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.container .sale-area .cards-group .card button {
+  font-size: 24px;
+  padding: 8px 32px;
+  margin-bottom: 32px;
+  color: white;
+  background-color: #D38282;
+  border: none;
+  transition: 0.3s;
+}
+.container .sale-area .cards-group .card button:hover {
+  background-color: #ce8787;
+  cursor: pointer;
+  scale: 1.05;
+}
+.container .sale-area .cards-group .card button:active {
+  scale: 0.95;
+}
+.container .sale-area .cards-group .card1 {
+  background-image: url("./img/d1.png");
+}
+.container .sale-area .cards-group .card2 {
+  background-image: url("./img/d2.png");
+}
+.container .sale-area .cards-group .card3 {
+  background-image: url("./img/d3.png");
+}
+.container .news-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .news-area h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-top: 36px;
+}
+.container .news-area .cards-group {
+  display: flex;
+  justify-content: space-between;
+}
+.container .news-area .cards-group .card {
+  width: 30%;
+  background-color: white;
+  box-shadow: 2px 2px 8px #444;
+}
+.container .news-area .cards-group .card img {
+  width: 100%;
+}
+.container .news-area .cards-group .card p {
+  margin: 16px 36px 12px 36px;
+}
+.container .news-area .cards-group .card button {
+  width: 84px;
+  height: 36px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  margin: 0 36px 32px 36px;
+  border: none;
+  transition: 300ms;
+}
+.container .news-area .cards-group .card button:hover {
+  background-color: #555;
+  cursor: pointer;
+  scale: 1.05;
+}
+.container .news-area .cards-group .card button:active {
+  scale: 0.95;
+}
+.container .news-area .btn-more {
+  font-size: 24px;
+  padding: 8px 32px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+  color: white;
+  background-color: #D38282;
+  border: none;
+  transition: 0.3s;
+}
+.container .news-area .btn-more:hover {
+  background-color: #ce8787;
+  cursor: pointer;
+  scale: 1.05;
+}
+.container .news-area .btn-more:active {
+  scale: 0.95;
+}
+.container .new-arrival-area {
+  position: relative;
+  display: flex;
+  padding: 64px 0;
+}
+.container .new-arrival-area .bg {
+  position: absolute;
+  top: 0;
+  right: 510px;
+  width: 1200px;
+  height: 100%;
+  z-index: -1;
+  background-color: #D38282;
+}
+.container .new-arrival-area img {
+  width: 60%;
+  height: 360px;
+}
+.container .new-arrival-area .text-card {
+  background-color: #F7CDC0;
+  padding: 48px;
+  margin-left: 32px;
+}
+.container .new-arrival-area .text-card h3 {
+  font-size: 36px;
+  text-align: center;
+  margin: 16px 0;
+}
+.container .new-arrival-area .text-card p {
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #D38282;
+  margin-top: 96px;
+}
+footer p {
+  font-size: 24px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

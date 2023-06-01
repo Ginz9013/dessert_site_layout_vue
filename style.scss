@@ -1,0 +1,264 @@
+$primary-color: #D38282;
+$primary-dark: #ce8787;
+$primary-light: #F7CDC0;
+
+body {
+    margin: 0;
+    background-color: #FFFAEA;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 48px 0;
+
+        // 高度用裡面的東西撐起來
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: $primary-color;
+        }
+
+        .nav {
+            width: 50px;
+            height: 10px;
+            background-color: #555;
+            position: relative;
+            border-radius: 5px;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                // inherit 與父層相同
+                width: inherit;
+                height: inherit;
+                background-color: inherit;
+                border-radius: 5px;
+            }
+
+            &::before {
+                top: -20px;
+            }
+
+            &::after {
+                top: 20px;
+            }
+        }
+    }
+
+    .home-area {
+        display: flex;
+        align-items: center;
+
+        .text-area {
+            padding-bottom: 48px;
+
+            h1 {
+                margin-left: 32px;
+                font-size: 64px;
+                margin-bottom: 21px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .sale-area {
+        margin-bottom: 48px;
+
+        h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-top: 64px;
+        }
+
+        .cards-group {
+            display: flex;
+            justify-content: space-between;
+
+            .card {
+                width: 30%;
+                height: 360px;
+                background: {
+                    position: center center;
+                    repeat: no-repeat;
+                    size: cover;
+                    color: white;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                button {
+                    font-size: 24px;
+                    padding: 8px 32px;
+                    margin-bottom: 32px;
+                    color: white;
+                    background-color: $primary-color;
+                    border: none;
+                    transition: 0.3s;
+
+                    // hover (滑鼠滑上的事件/動作)
+                    &:hover {
+                        background-color: $primary-dark;
+                        cursor: pointer;
+                        scale: 1.05;
+                    }
+
+                    &:active {
+                        scale: 0.95;
+                    }
+                }
+            }
+
+            .card1 {
+                background-image: url("./img/d1.png");
+            }
+
+            .card2 {
+                background-image: url("./img/d2.png");
+            }
+
+            .card3 {
+                background-image: url("./img/d3.png");
+            }
+        }
+    }
+
+    .news-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-top: 36px;
+        }
+
+        .cards-group {
+            display: flex;
+            justify-content: space-between;
+
+            .card {
+                width: 30%;
+                background-color: white;
+                //          x軸 y軸 模糊  顏色  
+                box-shadow: 2px 2px 8px #444;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    margin: 16px 36px 12px 36px;
+                }
+
+                button {
+                    width: 84px;
+                    height: 36px;
+                    font-size: 16px;
+                    color: white;
+                    background-color: black;
+                    margin: 0 36px 32px 36px;
+                    border: none;
+                    transition: 300ms;
+
+                    &:hover {
+                        background-color: #555;
+                        cursor: pointer;
+                        scale: 1.05;
+                    }
+
+                    &:active {
+                        scale: 0.95;
+                    }
+                }
+            }
+        }
+
+        .btn-more {
+            font-size: 24px;
+            padding: 8px 32px;
+            margin-top: 36px;
+            margin-bottom: 32px;
+            color: white;
+            background-color: $primary-color;
+            border: none;
+            transition: 0.3s;
+
+            // hover (滑鼠滑上的事件/動作)
+            &:hover {
+                background-color: $primary-dark;
+                cursor: pointer;
+                scale: 1.05;
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+    }
+
+    .new-arrival-area {
+        position: relative;
+        display: flex;
+        padding: 64px 0;
+
+        .bg {
+            position: absolute;
+            top: 0;
+            right: 510px;
+            width: 1200px;
+            height: 100%;
+            z-index: -1;
+            background-color: $primary-color;
+        }
+
+        img {
+            width: 60%;
+            height: 360px;
+        }
+
+        .text-card {
+            background-color: $primary-light;
+            padding: 48px;
+            margin-left: 32px;
+
+            h3 {
+                font-size: 36px;
+                text-align: center;
+                margin: 16px 0;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 16px 0;
+    background-color: $primary-color;
+    margin-top: 96px;
+
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+}
